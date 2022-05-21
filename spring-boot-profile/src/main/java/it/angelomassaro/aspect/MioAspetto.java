@@ -31,7 +31,7 @@ public class MioAspetto {
 		MethodSignature signature = (MethodSignature) pjp.getSignature();
 	    Method method = signature.getMethod();
 		MyAnnotation myAnnotation = method.getAnnotation(MyAnnotation.class);
-		System.out.println("ANNOTAZIONE LETTA: MyAnnotation: " + myAnnotation.value() + " - " + myAnnotation.operazione());
+		System.out.println("ANNOTAZIONE LETTA: myAnnotation.value(): " + myAnnotation.value() + " - myAnnotation.operazione(): " + myAnnotation.operazione());
 		
 		// Log prima dell'invocazione del metodo
 		System.out.println("[" + new Date() + "]nt"
